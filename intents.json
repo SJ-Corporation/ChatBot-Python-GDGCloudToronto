@@ -1,0 +1,61 @@
+{"intents":[
+    {
+        "tag" : "greeting",
+        "patterns" : ["hi there" , "How are you" , "Hello" , "Howdy" , "Hey" , "Heya" , "Hey there" , "Hola" , "Is anyone there?"],
+        "responses" : ["Hello, thanks for asking" , "Good to see you" , "Hi there, How can I help?" , "Glad to see you"],
+        "context" : [""]
+    },
+    {
+        "tag" : "goodbye",
+        "patterns" : ["Bye" , "See you later" , "Hello" , "Goodbye" , "Nice chatting with you, bye" , "Have a good one"],
+        "responses" : ["See you" , "Have a nice day" , "Bye! Come back again soon."],
+        "context" : [""]
+    },
+    {
+        "tag" : "thanks",
+        "patterns" : ["Thanks" , "Thank you" , "That's helpful" , "Awesome, thanks" , "Thanks for helping me" ],
+        "responses" : ["Happy to help!" , "Any time!" , "My pleasure" , "You're welcome"],
+        "context" : [""]
+    },
+    {
+        "tag" : "noanswer",
+        "patterns" : [],
+        "responses" : ["Sorry, can't understand you" , "Please give me more info"],
+        "context" : [""]
+    },
+    {
+        "tag" : "options",
+        "patterns" : ["How you could help me?" , "What you can do?" , "What help you can provide?" , "What is your roll?"],
+        "responses" : ["I can assist you with the information about GDG Cloud Toronto and its events."],
+        "context" : [""]
+    },
+    {
+        "tag" : "about",
+        "patterns" : ["What is cloud Toronto?" , "What is GDG?" , "about cloud Toronto" , "about GDG"],
+        "responses" : ["GDG Cloud Toronto is a community group supported by Google, StartGBC, and George Brown College. Need more info? visit https://gdg.community.dev/gdg-cloud-toronto/#description"],
+        "context" : [""]
+    },
+    {
+        "tag" : "socialmedias",
+        "patterns" : ["Do you have any social medias?" , "What are the social medias you have?" , "social sites" , "social platforms"],
+        "responses" : ["Facebook : https://www.facebook.com/GDGCloudToronto\n" , 
+                        "Twitter : https://twitter.com/gdgcloudtoronto\n" , 
+                        "LinkedIn : https://www.linkedin.com/company/gdgcloudtoronto/\n" , 
+                        "Email : https://gdg.community.dev/gdg-cloud-toronto/#"],
+        "context" : [""]
+    },
+    {
+        "tag" : "events",
+        "patterns" : ["What are the events?" , "events in GDG" , "can I know the events" , "view the events"],
+        "responses" : ["Upcoming Events : \nThere are no upcoming events at the moment. Please check again soon." , 
+                        "Past Events : \nCloud Study Jam : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-cloud-study-jam-insights-from-data-with-bigquery/" , 
+                                        "\nAndroid Study Jam - Session 5: https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-5/" , 
+                                        "\nFoundational Infrastructure Tasks : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-foundational-infrastructure-tasks-free-hands-on-workshop/" , 
+                                        "\nAndroid Study Jam - Session 4 : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-4/" , 
+                                        "\nIWD Partnering with Thomson Reuters : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-iwd-partnering-with-thomson-reuters/" , 
+                                        "\nAndroid Study Jam - Session 3 : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-3/" , 
+                                        "\nAndroid Study Jam - Session 2 : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-2/" , 
+                                        "\nAndroid Study Jam - Session 1 : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-1/"],
+        "context" : [""]
+    }
+]}
