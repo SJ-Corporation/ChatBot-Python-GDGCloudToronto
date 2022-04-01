@@ -1,14 +1,14 @@
 {"intents":[
     {
         "tag" : "greeting",
-        "patterns" : ["hi there" , "How are you" , "Hello" , "Howdy" , "Hey" , "Heya" , "Hey there" , "Hola" , "Is anyone there?"],
-        "responses" : ["Hello, thanks for asking" , "Good to see you" , "Hi there, How can I help?" , "Glad to see you"],
+        "patterns" : ["hi there" , "How are you" , "Hello" , "Howdy" , "Hey there" , "Hola" , "hii"],
+        "responses" : ["Hello" , "Good to see you" , "Hi there, How can I help?" , "Glad to see you"],
         "context" : [""]
     },
     {
         "tag" : "goodbye",
-        "patterns" : ["Bye" , "See you later" , "Hello" , "Goodbye" , "Nice chatting with you, bye" , "Have a good one"],
-        "responses" : ["See you" , "Have a nice day" , "Bye! Come back again soon."],
+        "patterns" : ["Bye" , "See you later" , "Goodbye" , "Nice chatting with you, bye" , "Have a good one"],
+        "responses" : ["See you" , "Have a nice day" , "Bye! Come back again soon." , "Nice chat with you"],
         "context" : [""]
     },
     {
@@ -37,25 +37,56 @@
     },
     {
         "tag" : "socialmedias",
-        "patterns" : ["Do you have any social medias?" , "What are the social medias you have?" , "social sites" , "social platforms"],
-        "responses" : ["Facebook : https://www.facebook.com/GDGCloudToronto\n" , 
-                        "Twitter : https://twitter.com/gdgcloudtoronto\n" , 
-                        "LinkedIn : https://www.linkedin.com/company/gdgcloudtoronto/\n" , 
-                        "Email : https://gdg.community.dev/gdg-cloud-toronto/#"],
+        "patterns" : ["Do you have any social medias?" , "What are the social medias you have?" , "social sites" , "social platforms" , "Contacts" , "How can I contact you?"],
+        "responses" : ["Facebook\nTwitter\nLinkedIn\nEmail"],
+        "context" : [""]
+    },
+    {
+        "tag" : "facebook",
+        "patterns" : ["fb" , "faceB" , "fbook"],
+        "responses" : ["Facebook : https://www.facebook.com/GDGCloudToronto"],
+        "context" : [""]
+    },
+    {
+        "tag" : "twitter",
+        "patterns" : ["tweet" , "twitter"],
+        "responses" : ["Twitter : https://twitter.com/gdgcloudtoronto"],
+        "context" : [""]
+    },
+    {
+        "tag" : "linkedin",
+        "patterns" : ["ln" , "linkedin"],
+        "responses" : ["LinkedIn : https://www.linkedin.com/company/gdgcloudtoronto/"],
+        "context" : [""]
+    },
+    {
+        "tag" : "email",
+        "patterns" : ["mailId" , "email" , "mail"],
+        "responses" : ["Email : https://gdg.community.dev/gdg-cloud-toronto/#"],
         "context" : [""]
     },
     {
         "tag" : "events",
         "patterns" : ["What are the events?" , "events in GDG" , "can I know the events" , "view the events"],
-        "responses" : ["Upcoming Events : \nThere are no upcoming events at the moment. Please check again soon." , 
-                        "Past Events : \nCloud Study Jam : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-cloud-study-jam-insights-from-data-with-bigquery/" , 
-                                        "\nAndroid Study Jam - Session 5: https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-5/" , 
-                                        "\nFoundational Infrastructure Tasks : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-foundational-infrastructure-tasks-free-hands-on-workshop/" , 
-                                        "\nAndroid Study Jam - Session 4 : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-4/" , 
-                                        "\nIWD Partnering with Thomson Reuters : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-iwd-partnering-with-thomson-reuters/" , 
-                                        "\nAndroid Study Jam - Session 3 : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-3/" , 
-                                        "\nAndroid Study Jam - Session 2 : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-2/" , 
-                                        "\nAndroid Study Jam - Session 1 : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-1/"],
+        "responses" : ["\nUpcoming Events : \nThere are no upcoming events at the moment. Please check again soon.\n\nPast Events : \n1. Cloud Study Jam : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-cloud-study-jam-insights-from-data-with-bigquery/ \n\n2. Android Study Jam - Session 5: https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-5/\n\n3. Foundational Infrastructure Tasks : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-foundational-infrastructure-tasks-free-hands-on-workshop/ \n\n4. Android Study Jam - Session 4 : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-4/ \n\n5. IWD Partnering with Thomson Reuters : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-iwd-partnering-with-thomson-reuters/ \n\n6. Android Study Jam - Session 3 : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-3/ \n\n7. Android Study Jam - Session 2 : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-2/ \n\n8. Android Study Jam - Session 1 : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-1/"],
+        "context" : [""]
+    },
+    {
+        "tag" : "organizers",
+        "patterns" : ["organizers" , "host" , "coordinators"],
+        "responses" : ["1. Ramkumar Arunamoorthy\n2. Shweta Shukla"],
+        "context" : [""]
+    },
+    {
+        "tag" : "location",
+        "patterns" : ["loc" , "place" , "location"],
+        "responses" : ["George Brown College, Toronto"],
+        "context" : [""]
+    },
+    {
+        "tag" : "partners",
+        "patterns" : ["partners"],
+        "responses" : ["George Brown College, Toronto"],
         "context" : [""]
     }
 ]}
