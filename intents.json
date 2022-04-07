@@ -44,25 +44,31 @@
     {
         "tag" : "facebook",
         "patterns" : ["fb" , "faceB" , "fbook"],
-        "responses" : ["Facebook : https://www.facebook.com/GDGCloudToronto"],
+        "responses" : ["<a target='_blank' href='https://www.facebook.com/GDGCloudToronto'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/f/91/facebook-icon.svg'></a>"],
         "context" : [""]
     },
     {
         "tag" : "twitter",
         "patterns" : ["tweet" , "twitter"],
-        "responses" : ["Twitter : https://twitter.com/gdgcloudtoronto"],
+        "responses" : ["<a target='_blank' href='https://twitter.com/gdgcloudtoronto'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/t/96/twitter-icon.svg'></a>"],
         "context" : [""]
     },
     {
         "tag" : "linkedin",
         "patterns" : ["ln" , "linkedin"],
-        "responses" : ["LinkedIn : https://www.linkedin.com/company/gdgcloudtoronto/"],
+        "responses" : ["<a target='_blank' href='https://www.linkedin.com/company/gdgcloudtoronto/'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/l/66/linkedin-icon.svg'></a>"],
         "context" : [""]
     },
     {
         "tag" : "email",
         "patterns" : ["mailId" , "email" , "mail"],
         "responses" : ["Email : https://gdg.community.dev/gdg-cloud-toronto/#"],
+        "context" : [""]
+    },
+    {
+        "tag" : "instagram",
+        "patterns" : ["insta" , "instagram"],
+        "responses" : ["<a target='_blank' href='https://www.instagram.com/GdgCloudToronto'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/i/32/instagram-icon.svg'></a>"],
         "context" : [""]
     },
     {
