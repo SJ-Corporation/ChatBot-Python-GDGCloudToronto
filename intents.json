@@ -32,49 +32,55 @@
     {
         "tag" : "about",
         "patterns" : ["What is cloud Toronto?" , "What is GDG?" , "about cloud Toronto" , "about GDG"],
-        "responses" : ["GDG Cloud Toronto is a community group supported by Google, StartGBC, and George Brown College. Need more info? visit https://gdg.community.dev/gdg-cloud-toronto/#description"],
+        "responses" : ["GDG Cloud Toronto is a community group supported by Google, StartGBC, and George Brown College. <a class='btn btn-link' href='https://gdg.community.dev/gdg-cloud-toronto/#description' role='button target='_blank'>Learn More</a>"],
         "context" : [""]
     },
     {
         "tag" : "socialmedias",
-        "patterns" : ["Do you have any social medias?" , "What are the social medias you have?" , "social sites" , "social platforms" , "Contacts" , "How can I contact you?"],
-        "responses" : ["Facebook\nTwitter\nLinkedIn\nEmail"],
+        "patterns" : ["Do you have any social medias?" , "What are the social medias you have?" , "social sites" , "social platforms" , "Connect" , "media", "How can I connect with you?"],
+        "responses" : ["<a target='_blank' href='https://www.facebook.com/GDGCloudToronto'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/f/91/facebook-icon.svg'></a> <a  target='_blank' href='https://twitter.com/gdgcloudtoronto'><img width='36' style='margin: 5px'  src='https://cdn.cdnlogo.com/logos/t/96/twitter-icon.svg'></a> <a  target='_blank' href='https://www.linkedin.com/company/gdgcloudtoronto/'><img width='36' style='margin: 5px'  src='https://cdn.cdnlogo.com/logos/l/66/linkedin-icon.svg'></a> <a  target='_blank' href='https://www.instagram.com/GdgCloudToronto'><img width='36' style='margin: 5px'  src='https://cdn.cdnlogo.com/logos/i/32/instagram-icon.svg'></a>"],
         "context" : [""]
     },
     {
         "tag" : "facebook",
-        "patterns" : ["fb" , "faceB" , "fbook"],
-        "responses" : ["<a target='_blank' href='https://www.facebook.com/GDGCloudToronto'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/f/91/facebook-icon.svg'></a>"],
+        "patterns" : ["fb" , "faceB" , "fbook", "facebook"],
+        "responses" : ["Facebook <a target='_blank' href='https://www.facebook.com/GDGCloudToronto'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/f/91/facebook-icon.svg'></a>"],
         "context" : [""]
     },
     {
         "tag" : "twitter",
         "patterns" : ["tweet" , "twitter"],
-        "responses" : ["<a target='_blank' href='https://twitter.com/gdgcloudtoronto'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/t/96/twitter-icon.svg'></a>"],
+        "responses" : ["Twitter <a target='_blank' href='https://twitter.com/gdgcloudtoronto'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/t/96/twitter-icon.svg'></a>"],
         "context" : [""]
     },
     {
         "tag" : "linkedin",
         "patterns" : ["ln" , "linkedin"],
-        "responses" : ["<a target='_blank' href='https://www.linkedin.com/company/gdgcloudtoronto/'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/l/66/linkedin-icon.svg'></a>"],
+        "responses" : ["LinkedIn <a target='_blank' href='https://www.linkedin.com/company/gdgcloudtoronto/'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/l/66/linkedin-icon.svg'></a>"],
         "context" : [""]
     },
     {
         "tag" : "email",
-        "patterns" : ["mailId" , "email" , "mail"],
-        "responses" : ["Email : https://gdg.community.dev/gdg-cloud-toronto/#"],
+        "patterns" : ["mailId" , "email" , "mail", "contact you", "contact", "reach you", "emailId", "email address"],
+        "responses" : ["Email : <a class='btn btn-link' href='https://gdg.community.dev/gdg-cloud-toronto/#' role='button target='_blank'>Click here</a>"],
         "context" : [""]
     },
     {
         "tag" : "instagram",
         "patterns" : ["insta" , "instagram"],
-        "responses" : ["<a target='_blank' href='https://www.instagram.com/GdgCloudToronto'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/i/32/instagram-icon.svg'></a>"],
+        "responses" : ["Instagram <a target='_blank' href='https://www.instagram.com/GdgCloudToronto'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/i/32/instagram-icon.svg'></a>"],
         "context" : [""]
     },
     {
-        "tag" : "events",
-        "patterns" : ["What are the events?" , "events in GDG" , "can I know the events" , "view the events"],
-        "responses" : ["\nUpcoming Events : \nThere are no upcoming events at the moment. Please check again soon.\n\nPast Events : \n1. Cloud Study Jam : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-cloud-study-jam-insights-from-data-with-bigquery/ \n\n2. Android Study Jam - Session 5: https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-5/\n\n3. Foundational Infrastructure Tasks : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-foundational-infrastructure-tasks-free-hands-on-workshop/ \n\n4. Android Study Jam - Session 4 : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-4/ \n\n5. IWD Partnering with Thomson Reuters : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-iwd-partnering-with-thomson-reuters/ \n\n6. Android Study Jam - Session 3 : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-3/ \n\n7. Android Study Jam - Session 2 : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-2/ \n\n8. Android Study Jam - Session 1 : https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-1/"],
+        "tag" : "upcoming",
+        "patterns" : ["What are the upcoming events?" , "upcoming events in GDG" , "can I know the upcoming events" , "view the upcoming events", "coming events", "coming", "upcoming"],
+        "responses" : ["There are no upcoming events at the moment. Please check again soon."],
+        "context" : [""]
+    },
+    {
+        "tag" : "past",
+        "patterns" : ["What are the past events?" , "past events in GDG" , "can I know the past events" , "view the past events", "past", "pastevents", "older"],
+        "responses" : ["<a target='_blank' href='https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-cloud-study-jam-insights-from-data-with-bigquery/'><img width='36' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-goog/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy.png'> Cloud Study Jam</a><br><a target='_blank' href='https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-5/'><img width='36' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-goog/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy.png'> Android Study Jam</a><br><a target='_blank' href='https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-foundational-infrastructure-tasks-free-hands-on-workshop/'><img width='36' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-goog/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy.png'> Foundational Infrastructure Tasks</a><br><a target='_blank' href='https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-4/'><img width='36' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-goog/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy.png'> Android Study Jam</a><br><a class='btn btn-link' href='https://gdg.community.dev/gdg-cloud-toronto/#past-events' role='button target='_blank'>More Past Events...</a>"],
         "context" : [""]
     },
     {
