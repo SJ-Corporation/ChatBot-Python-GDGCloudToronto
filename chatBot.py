@@ -56,3 +56,6 @@ def chatbot_response(text):
     ints = predict_class(text, model)
     res = getResponse(ints, intents)
     return res
+
+
+# just simple changes
