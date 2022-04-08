@@ -10,7 +10,8 @@
         "tag" : "goodbye",
         "patterns" : ["Bye" , "See you later" , "Goodbye" , "Nice chatting with you, bye" , "Have a good one"],
         "responses" : ["See you" , "Have a nice day" , "Bye! Come back again soon." , "Nice chat with you"],
-        "context" : [""]
+        "context" : [""],
+        "choices" : [""]
     },
     {
         "tag" : "wishing",
@@ -23,7 +24,8 @@
         "tag" : "thanks",
         "patterns" : ["Thanks" , "Thank you" , "That's helpful" , "Awesome, thanks" , "Thanks for helping me" ],
         "responses" : ["Happy to help!" , "Any time!" , "My pleasure" , "You're welcome"],
-        "context" : [""]
+        "context" : [""],
+        "choices" : [""]
     },
     {
         "tag" : "noanswer",
