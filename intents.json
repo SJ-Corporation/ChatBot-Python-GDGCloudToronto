@@ -1,15 +1,23 @@
 {"intents":[
     {
         "tag" : "greeting",
-        "patterns" : ["hi there" , "How are you" , "Hello" , "Howdy" , "Hey there" , "Hola" , "hii"],
+        "patterns" : ["hi there", "Hello" , "Howdy" , "Hey there" , "Hola" , "hii"],
         "responses" : ["Hello" , "Good to see you" , "Hi there, How can I help?" , "Glad to see you"],
-        "context" : [""]
+        "context" : [""],
+        "choices" : ["How can you help me?", "What is GDG?", "upcoming events", "options"]
     },
     {
         "tag" : "goodbye",
         "patterns" : ["Bye" , "See you later" , "Goodbye" , "Nice chatting with you, bye" , "Have a good one"],
         "responses" : ["See you" , "Have a nice day" , "Bye! Come back again soon." , "Nice chat with you"],
         "context" : [""]
+    },
+    {
+        "tag" : "wishing",
+        "patterns" : ["How are You?" , "How are you doing" , "How you do?" , "How you do today" , "are you okay", "are you fine?"],
+        "responses" : ["I am good. Thanks for asking"],
+        "context" : [""],
+        "choices" : ["How you help?", "What is GDG?", "upcoming events", "options"]
     },
     {
         "tag" : "thanks",
@@ -20,85 +28,99 @@
     {
         "tag" : "noanswer",
         "patterns" : [],
-        "responses" : ["Sorry, can't understand you" , "Please give me more info"],
-        "context" : [""]
+        "responses" : ["Sorry, can't understand" , "Please give me more info"],
+        "context" : [""],
+        "choices" : ["How can you help me?", "What is GDG?", "upcoming events"]
     },
     {
         "tag" : "options",
         "patterns" : ["How you could help me?" , "What you can do?" , "What help you can provide?" , "What is your roll?"],
         "responses" : ["I can assist you with the information about GDG Cloud Toronto and its events."],
-        "context" : [""]
+        "context" : [""],
+        "choices" : ["About GDG", "upcoming events", "social medias", "Partners of GDG", "Past Events"]
     },
     {
         "tag" : "about",
         "patterns" : ["What is cloud Toronto?" , "What is GDG?" , "about cloud Toronto" , "about GDG"],
         "responses" : ["GDG Cloud Toronto is a community group supported by Google, StartGBC, and George Brown College. <a class='btn btn-link' href='https://gdg.community.dev/gdg-cloud-toronto/#description' role='button target='_blank'>Learn More</a>"],
-        "context" : [""]
+        "context" : [""],
+        "choices" : ["Organizers of GDG", "Partners of GDG", "upcoming events"]
     },
     {
         "tag" : "socialmedias",
         "patterns" : ["Do you have any social medias?" , "What are the social medias you have?" , "social sites" , "social platforms" , "Connect" , "media", "How can I connect with you?"],
         "responses" : ["<a target='_blank' href='https://www.facebook.com/GDGCloudToronto'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/f/91/facebook-icon.svg'></a> <a  target='_blank' href='https://twitter.com/gdgcloudtoronto'><img width='36' style='margin: 5px'  src='https://cdn.cdnlogo.com/logos/t/96/twitter-icon.svg'></a> <a  target='_blank' href='https://www.linkedin.com/company/gdgcloudtoronto/'><img width='36' style='margin: 5px'  src='https://cdn.cdnlogo.com/logos/l/66/linkedin-icon.svg'></a> <a  target='_blank' href='https://www.instagram.com/GdgCloudToronto'><img width='36' style='margin: 5px'  src='https://cdn.cdnlogo.com/logos/i/32/instagram-icon.svg'></a>"],
-        "context" : [""]
+        "context" : [""],
+        "choices" : ["Facebook", "LinkedIn", "Instagram", "Twitter"]
     },
     {
         "tag" : "facebook",
         "patterns" : ["fb" , "faceB" , "fbook", "facebook"],
         "responses" : ["Facebook <a target='_blank' href='https://www.facebook.com/GDGCloudToronto'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/f/91/facebook-icon.svg'></a>"],
-        "context" : [""]
+        "context" : [""],
+        "choices" : ["Email Address", "Social Media", "Options"]
     },
     {
         "tag" : "twitter",
         "patterns" : ["tweet" , "twitter"],
         "responses" : ["Twitter <a target='_blank' href='https://twitter.com/gdgcloudtoronto'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/t/96/twitter-icon.svg'></a>"],
-        "context" : [""]
+        "context" : [""],
+        "choices" : ["Email Address", "Social Media", "Options"]
     },
     {
         "tag" : "linkedin",
         "patterns" : ["ln" , "linkedin"],
         "responses" : ["LinkedIn <a target='_blank' href='https://www.linkedin.com/company/gdgcloudtoronto/'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/l/66/linkedin-icon.svg'></a>"],
-        "context" : [""]
+        "context" : [""],
+        "choices" : ["Email Address", "Social Media", "Options"]
     },
     {
         "tag" : "email",
         "patterns" : ["mailId" , "email" , "mail", "contact you", "contact", "reach you", "emailId", "email address"],
         "responses" : ["Email : <a class='btn btn-link' href='https://gdg.community.dev/gdg-cloud-toronto/#' role='button target='_blank'>Click here</a>"],
-        "context" : [""]
+        "context" : [""],
+        "choices" : ["About GDG", "Options", "Upcoming Events"]
     },
     {
         "tag" : "instagram",
         "patterns" : ["insta" , "instagram"],
         "responses" : ["Instagram <a target='_blank' href='https://www.instagram.com/GdgCloudToronto'><img width='36' style='margin: 5px' src='https://cdn.cdnlogo.com/logos/i/32/instagram-icon.svg'></a>"],
-        "context" : [""]
+        "context" : [""],
+        "choices" : ["Email Address", "Social Media", "Options"]
     },
     {
         "tag" : "upcoming",
         "patterns" : ["What are the upcoming events?" , "upcoming events in GDG" , "can I know the upcoming events" , "view the upcoming events", "coming events", "coming", "upcoming"],
         "responses" : ["There are no upcoming events at the moment. Please check again soon."],
-        "context" : [""]
+        "context" : [""],
+        "choices" : ["Past Events", "Organizers of GDG", "Location", "Options"]
     },
     {
         "tag" : "past",
         "patterns" : ["What are the past events?" , "past events in GDG" , "can I know the past events" , "view the past events", "past", "pastevents", "older"],
         "responses" : ["<a target='_blank' href='https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-cloud-study-jam-insights-from-data-with-bigquery/'><img width='36' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-goog/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy.png'> Cloud Study Jam</a><br><a target='_blank' href='https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-5/'><img width='36' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-goog/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy.png'> Android Study Jam</a><br><a target='_blank' href='https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-foundational-infrastructure-tasks-free-hands-on-workshop/'><img width='36' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-goog/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy.png'> Foundational Infrastructure Tasks</a><br><a target='_blank' href='https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-4/'><img width='36' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-goog/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy.png'> Android Study Jam</a><br><a class='btn btn-link' href='https://gdg.community.dev/gdg-cloud-toronto/#past-events' role='button target='_blank'>More Past Events...</a>"],
-        "context" : [""]
+        "context" : [""],
+        "choices" : ["About GDG", "Options", "Upcoming Events"]
     },
     {
         "tag" : "organizers",
         "patterns" : ["organizers" , "host" , "coordinators"],
-        "responses" : ["1. Ramkumar Arunamoorthy\n2. Shweta Shukla"],
-        "context" : [""]
+        "responses" : ["Ramkumar Arunamoorthy and Shweta Shukla"],
+        "context" : [""],
+        "choices" : ["About GDG", "Options", "Upcoming Events"]
     },
     {
         "tag" : "location",
-        "patterns" : ["loc" , "place" , "location"],
+        "patterns" : ["loc" , "place" , "location", "where are they located", "reach them", "find them", "locate"],
         "responses" : ["George Brown College, Toronto"],
-        "context" : [""]
+        "context" : [""],
+        "choices" : ["About GDG", "Past Events", "Upcoming Events", "Email Address"]
     },
     {
         "tag" : "partners",
         "patterns" : ["partners"],
-        "responses" : ["George Brown College, Toronto"],
-        "context" : [""]
+        "responses" : ["Google, StartGBC, George Brown College"],
+        "context" : [""],
+        "choices" : ["Organizers of GDG", "About GDG", "Options", "Upcoming Events"]
     }
 ]}
