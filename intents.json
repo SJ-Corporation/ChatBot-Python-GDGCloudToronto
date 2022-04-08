@@ -35,9 +35,16 @@
         "choices" : ["How can you help me?", "What is GDG?", "upcoming events"]
     },
     {
-        "tag" : "options",
+        "tag" : "help",
         "patterns" : ["How you could help me?" , "What you can do?" , "What help you can provide?" , "What is your roll?"],
         "responses" : ["I can assist you with the information about GDG Cloud Toronto and its events."],
+        "context" : [""],
+        "choices" : ["About GDG", "upcoming events", "social medias", "Partners of GDG", "Past Events"]
+    },
+    {
+        "tag" : "options",
+        "patterns" : ["options", "option"],
+        "responses" : ["Below is the list"],
         "context" : [""],
         "choices" : ["About GDG", "upcoming events", "social medias", "Partners of GDG", "Past Events"]
     },
@@ -100,7 +107,7 @@
     {
         "tag" : "past",
         "patterns" : ["What are the past events?" , "past events in GDG" , "can I know the past events" , "view the past events", "past", "pastevents", "older"],
-        "responses" : ["<a target='_blank' href='https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-cloud-study-jam-insights-from-data-with-bigquery/'><img width='36' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-goog/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy.png'> Cloud Study Jam</a><br><a target='_blank' href='https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-5/'><img width='36' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-goog/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy.png'> Android Study Jam</a><br><a target='_blank' href='https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-foundational-infrastructure-tasks-free-hands-on-workshop/'><img width='36' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-goog/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy.png'> Foundational Infrastructure Tasks</a><br><a target='_blank' href='https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-4/'><img width='36' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-goog/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy.png'> Android Study Jam</a><br><a class='btn btn-link' href='https://gdg.community.dev/gdg-cloud-toronto/#past-events' role='button target='_blank'>More Past Events...</a>"],
+        "responses" : ["<a target='_blank' style='text-decoration: none' href='https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-cloud-study-jam-insights-from-data-with-bigquery/'><img width='36' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-goog/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy.png'>&nbsp; Cloud Study Jam</a><br><a target='_blank' style='text-decoration: none' href='https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-5/'><img width='36' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-goog/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy.png'>&nbsp; Android Study Jam</a><br><a target='_blank' style='text-decoration: none' href='https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-foundational-infrastructure-tasks-free-hands-on-workshop/'><img width='36' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-goog/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy.png'>&nbsp; Foundational Infrastructure Tasks</a><br><a target='_blank' style='text-decoration: none' href='https://gdg.community.dev/events/details/google-gdg-cloud-toronto-presents-android-study-jam-session-4/'><img width='36' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-goog/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy.png'>&nbsp; Android Study Jam</a><br><a class='btn btn-link' style='text-decoration: none' href='https://gdg.community.dev/gdg-cloud-toronto/#past-events' role='button target='_blank'>More Events</a>"],
         "context" : [""],
         "choices" : ["About GDG", "Options", "Upcoming Events"]
     },
