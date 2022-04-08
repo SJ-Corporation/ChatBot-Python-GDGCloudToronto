@@ -1,4 +1,5 @@
 import nltk
+import json
 nltk.download('wordnet')
 nltk.download('punkt')
 nltk.download('omw-1.4')
@@ -53,12 +54,9 @@ def getResponse(ints, intents_json):
                 "choices": i['choices']
             }
             break
-    return result
+    return json.dumps(result)
 
 def chatbot_response(text):
     ints = predict_class(text, model)
     res = getResponse(ints, intents)
     return res
-
-
-# just simple changes
