@@ -51,7 +51,7 @@
     {
         "tag" : "about",
         "patterns" : ["What is cloud Toronto?" , "What is GDG?" , "about cloud Toronto" , "about GDG"],
-        "responses" : ["GDG Cloud Toronto is a community group supported by Google, StartGBC, and George Brown College. <a target='_blank' class='btn btn-link' href='https://gdg.community.dev/gdg-cloud-toronto/#description' role='button>Learn More</a>"],
+        "responses" : ["GDG Cloud Toronto is a community group supported by Google, StartGBC, and George Brown College. <a target='_blank' class='btn btn-link' href='https://gdg.community.dev/gdg-cloud-toronto/#description' role='button'>Learn More</a>"],
         "context" : [""],
         "choices" : ["Organizers of GDG", "Partners of GDG", "upcoming events"]
     },
